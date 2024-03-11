@@ -1,3 +1,23 @@
 .App {
   text-align: center;
 }
+.loading_box{
+  background-color: #21232a;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.loading{
+  position: absolute;
+  width: 40%;
+}
+
+.opacity_zero{
+  opacity: 0;
+  z-index: -0;
+}
