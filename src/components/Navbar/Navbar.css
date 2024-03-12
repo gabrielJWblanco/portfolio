@@ -29,7 +29,7 @@ a {
   display: flex;
   justify-content: center;
   width: 20%;
-  height: 250px;
+  height: 200px;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   padding-bottom: 20px;
@@ -145,13 +145,13 @@ a {
 }
 
 .nav input:checked ~ .menu li:nth-child(2) {
-  top: 160px;
+  top: 120px;
   left: calc(50% - 75px);
   transition-delay: 0.2s;
 }
 
 .nav input:checked ~ .menu li:nth-child(3) {
-  top: 160px;
+  top: 120px;
   left: calc(50% + 75px);
   transition-delay: 0.3s;
 }
