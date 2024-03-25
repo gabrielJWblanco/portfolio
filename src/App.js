@@ -31,11 +31,20 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/experience" element={<WorkExperiencePage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/" element={<HomePage loading={loading} />} />
+            <Route path="/about-me" element={<AboutMe loading={loading} />} />
+            <Route
+              path="/projects"
+              element={<ProjectsPage loading={loading} />}
+            />
+            <Route
+              path="/experience"
+              element={<WorkExperiencePage loading={loading} />}
+            />
+            <Route
+              path="/contact"
+              element={<ContactPage loading={loading} />}
+            />
           </Routes>
         </Router>
       </div>

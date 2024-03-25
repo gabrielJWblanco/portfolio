@@ -1,7 +1,7 @@
 import { Flex, Image } from "antd";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import imageLogo from "./Capture.png";
+import imageLogo from "../../Images/Capture.png";
 
 export default function HomePage() {
   return (
