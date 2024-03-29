@@ -30,7 +30,7 @@ export default function Navbar() {
               }}
             />
             <a>
-              <span>Sobre mim</span>
+              <span>About me</span>
 
               <i class="fas fa-address-card" aria-hidden="true"></i>
             </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
               }}
             />
             <a>
-              <span>Projetos</span>
+              <span>Projects</span>
               <i class="fas fa-tasks" aria-hidden="true"></i>
             </a>
           </li>
@@ -55,7 +55,7 @@ export default function Navbar() {
               }}
             />
             <a>
-              <span>Experiência</span>
+              <span>Experience</span>
               <i class="fas fa-users" aria-hidden="true"></i>
             </a>
           </li>
@@ -67,7 +67,7 @@ export default function Navbar() {
               }}
             />
             <a>
-              <span>Contacto</span>
+              <span>Contact</span>
               <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
             </a>
           </li>
