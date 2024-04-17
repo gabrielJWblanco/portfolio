@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   CodeOutlined,
@@ -24,11 +24,11 @@ export default function Navbar() {
                 navigate("/about-me");
               }}
             />
-            <a>
+            <div>
               <span>About me</span>
 
               <i class="fas fa-address-card" aria-hidden="true"></i>
-            </a>
+            </div>
           </li>
           <li>
             <CodeOutlined
@@ -37,10 +37,10 @@ export default function Navbar() {
                 navigate("/projects");
               }}
             />
-            <a>
+            <div>
               <span>Projects</span>
               <i class="fas fa-tasks" aria-hidden="true"></i>
-            </a>
+            </div>
           </li>
           <li>
             <SolutionOutlined
@@ -49,10 +49,10 @@ export default function Navbar() {
                 navigate("/experience");
               }}
             />
-            <a>
+            <div>
               <span>Experience</span>
               <i class="fas fa-users" aria-hidden="true"></i>
-            </a>
+            </div>
           </li>
           <li>
             <MailOutlined
@@ -61,10 +61,10 @@ export default function Navbar() {
                 navigate("/contact");
               }}
             />
-            <a>
+            <div>
               <span>Contact</span>
               <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-            </a>
+            </div>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ContactPage.css";
 import { motion } from "framer-motion";
-import { Flex, Image } from "antd";
+import { Image } from "antd";
 import imageLogo from "../../Images/Capture.png";
 
 export default function ContactPage() {
