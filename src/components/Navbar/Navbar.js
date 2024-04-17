@@ -9,11 +9,6 @@ import {
 import "./Navbar.css";
 
 export default function Navbar() {
-  const [current, setCurrent] = useState("mail");
-  const onClick = (e) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-  };
   const navigate = useNavigate();
   
   return (
