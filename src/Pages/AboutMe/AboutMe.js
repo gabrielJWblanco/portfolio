@@ -6,7 +6,7 @@ import imageLogo from "../../Images/Capture.png";
 import imageMe from "../../Images/Picture(Me)2.jpg";
 import { TypeAnimation } from "react-type-animation";
 
-export default function AboutMe({}) {
+export default function AboutMe() {
   const [loading, setLoading] = useState(true);
   const [loading2, setLoading2] = useState(true);
 
