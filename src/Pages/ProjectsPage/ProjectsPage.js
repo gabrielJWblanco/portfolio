@@ -1,7 +1,7 @@
 import "./ProjectsPage.css";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Flex, Image } from "antd";
+import { Flex, Image, Modal } from "antd";
 import imageLogo from "../../Images/Capture.png";
 import imageProject from "../../Images/projectImage.jpg";
 
@@ -9,6 +9,8 @@ export default function ProjectsPage() {
   const [loading, setLoading] = useState(true);
   const [loading2, setLoading2] = useState(true);
   const [loading3, setLoading3] = useState(true);
+  const [currentProject, setCurrentProject] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,6 +23,10 @@ export default function ProjectsPage() {
       setLoading3(false);
     }, 2700);
   }, []);
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const numRows = 1;
   const numCols = 3;
@@ -96,6 +102,10 @@ export default function ProjectsPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
                   style={{ ...itemStyle, cursor: "pointer" }}
+                  onClick={() => {
+                    setCurrentProject(index + 1);
+                    setIsModalOpen(true);
+                  }}
                 >
                   {index + 1}
                 </motion.div>
@@ -104,6 +114,7 @@ export default function ProjectsPage() {
           )}
         </Flex>
       </motion.div>
+      
     </>
   );
 }
